@@ -1,0 +1,120 @@
+Build a stunning, modern, frontend-only website for a professional gas installation company called “Gordon’s Bay Gas (PTY) LTD” located in Gordon’s Bay, Cape Town.
+
+⚠️ Important constraints:
+
+Frontend only (HTML, CSS, JavaScript)
+
+No backend
+
+No database
+
+No authentication
+
+Fully static site
+
+🎯 Design & Vibe
+
+Ultra-clean, high-trust, premium service business feel
+
+Modern, bold typography with excellent spacing
+
+Dark + light contrast theme (black / charcoal / white) with subtle orange or blue gas-flame accents
+
+Smooth micro-animations, hover effects, and scroll transitions
+
+Feels like a top-tier Cape Town service company
+
+🧱 Structure & Sections
+
+1. Hero Section
+
+Strong headline: “Safe. Certified. Professional Gas Installations”
+
+Subtext emphasizing compliance, safety, and experience
+
+Primary CTA button: “Call Now” (072 870 9882)
+
+Secondary CTA: “Get a Quote” (scrolls to contact section)
+
+2. Trust Indicators
+
+5-star rating (15 reviews)
+
+Badges/icons for: Certified Installers, Safety First, Residential & Commercial
+
+3. Services Section
+Use icon cards with subtle motion:
+
+Gas Installations
+
+Gas Compliance Certificates
+
+Gas Appliance Installations
+
+Maintenance & Inspections
+
+Residential & Commercial Work
+
+4. Why Choose Us
+
+Local Gordon’s Bay business
+
+Fully compliant & safety focused
+
+Fast response times
+
+Honest, professional workmanship
+
+5. Reviews Section
+
+Static testimonial cards styled beautifully
+
+Emphasize 5.0 ⭐ rating
+
+6. Service Area
+
+Gordon’s Bay
+
+Strand
+
+Somerset West
+
+Surrounding Cape Town areas
+
+7. Contact Section
+
+Click-to-call phone number
+
+Business address: 13 Gladiolus Cres, Gordon’s Bay, Cape Town
+
+Google Maps embed (static iframe)
+
+8. Footer
+
+Business name
+
+Phone number
+
+“Gas Installation Specialists – Gordon’s Bay”
+
+🛠 Tech Stack
+
+Clean semantic HTML
+
+Modern CSS (Flexbox/Grid)
+
+Vanilla JavaScript only
+
+Fully responsive (mobile-first)
+
+Fast loading & SEO-friendly
+
+✨ Extra Polish
+
+Sticky header with smooth scroll navigation
+
+Animated buttons and cards (subtle, classy)
+
+Professional icons (Heroicons / Lucide style)
+
+Feels trustworthy, safe, and premium — not generic
