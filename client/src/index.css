@@ -4,67 +4,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Clean, high-trust palette */
-  /* White background */
-  --background: 0 0% 100%;
-  /* Dark charcoal for text */
-  --foreground: 220 15% 15%;
-  
-  /* Gas Flame Orange Accent */
-  --primary: 25 95% 53%;
-  --primary-foreground: 0 0% 100%;
-  
-  /* Gas Flame Blue Accent - Secondary */
-  --secondary: 215 90% 45%;
-  --secondary-foreground: 0 0% 100%;
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
-  /* Subtle Muted Tones */
-  --muted: 210 20% 96%;
-  --muted-foreground: 220 10% 45%;
-  
-  --accent: 25 95% 53%;
-  --accent-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 220 15% 15%;
-  
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-  
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 98%;
-  
-  --ring: 25 95% 53%;
-  --radius: 0.75rem;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-  /* Fonts */
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
-  --font-display: 'Outfit', sans-serif;
-}
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-/* Dark mode overrides (optional/future proofing, though primary design is light/clean) */
-.dark {
-  --background: 222 47% 11%;
-  --foreground: 210 40% 98%;
-  
-  --primary: 25 95% 53%;
-  --primary-foreground: 0 0% 100%;
-  
-  --secondary: 215 90% 45%;
-  --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11.2%;
 
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
-  
-  --accent: 217 33% 17%;
-  --accent-foreground: 210 40% 98%;
-  
-  --card: 222 47% 11%;
-  --card-foreground: 210 40% 98%;
-  
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 24 95% 53%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 24 95% 53%;
+  }
 }
 
 @layer base {
@@ -72,29 +73,28 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground antialiased font-sans;
-    /* Smooth scrolling for the whole page */
-    scroll-behavior: smooth; 
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold tracking-tight text-slate-900;
+    @apply font-display tracking-tight;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
   }
   
-  /* Custom scrollbar for webkit */
-  ::-webkit-scrollbar {
-    width: 10px;
+  .glass-dark {
+    @apply bg-slate-900/70 backdrop-blur-md border border-white/10 shadow-2xl;
   }
-  ::-webkit-scrollbar-track {
-    background: transparent; 
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600;
   }
-  ::-webkit-scrollbar-thumb {
-    @apply bg-muted-foreground/30 rounded-full hover:bg-muted-foreground/50 transition-colors;
+
+  .hover-elevate {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20;
   }
 }
