@@ -66,7 +66,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Phone</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">+27 (0) 72 870 9882</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">072 870 9882</p>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Location</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Gordon's Bay, Cape Town, ZA</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">13 Gladiolus Cres, Gordon's Bay, Cape Town, 7140</p>
                 </div>
               </div>
             </div>

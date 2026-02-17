@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-display text-xl font-bold text-white">
               <Hammer className="h-6 w-6 text-primary" />
-              <span>ProFix Services</span>
+              <span>Gordon's Bay Gas(PTY) LTD</span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Professional compliance, repairs, and maintenance services for residential, industrial, and marine clients.
+              Professional gas installations, compliance certificates, and technical services for residential and commercial clients.
             </p>
             <div className="flex gap-4">
               <Facebook className="h-5 w-5 hover:text-primary cursor-pointer transition-colors" />
@@ -47,22 +47,22 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Industrial Way, Cape Town, South Africa</span>
+                <span>13 Gladiolus Cres, Gordon's Bay, Cape Town, 7140</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+27 (0) 21 123 4567</span>
+                <span>072 870 9882</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>info@profixservices.co.za</span>
+                <span>info@gordonsbaygas.co.za</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
-          <p>© {new Date().getFullYear()} ProFix Services. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Gordon's Bay Gas(PTY) LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>
