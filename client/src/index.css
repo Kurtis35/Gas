@@ -95,6 +95,6 @@
   }
 
   .hover-elevate {
-    @apply transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1) hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10;
+    @apply transition-all duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10;
   }
 }
