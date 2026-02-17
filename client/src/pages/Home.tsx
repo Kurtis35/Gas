@@ -34,17 +34,17 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-primary text-sm font-bold mb-8 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-bold mb-8 shadow-sm">
                 <ShieldCheck className="w-4 h-4" />
                 <span className="uppercase tracking-wider text-[10px]">Certified Compliance Specialists</span>
               </div>
               
-              <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 leading-[0.9] mb-8">
+              <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-8">
                 Expert Gas <br />
-                <span className="text-gradient italic">Installations.</span>
+                <span className="text-gradient italic text-emerald-600">Installations.</span>
               </h1>
               
-              <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+              <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-xl">
                 Premium gas, electrical, and plumbing services for Gordon's Bay. 
                 Professional certification and safety you can stake your reputation on.
               </p>
@@ -52,7 +52,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-5">
                 <Button 
                   size="lg" 
-                  className="rounded-2xl h-16 px-10 text-lg font-bold shadow-2xl shadow-primary/30 hover:shadow-primary/40 transition-all"
+                  className="rounded-2xl h-16 px-10 text-lg font-bold shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all bg-emerald-600 hover:bg-emerald-700"
                   asChild
                 >
                   <Link href="/contact">Get Expert Quote</Link>
@@ -60,7 +60,7 @@ export default function Home() {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="rounded-2xl h-16 px-10 text-lg font-bold border-2 hover:bg-slate-50 transition-all"
+                  className="rounded-2xl h-16 px-10 text-lg font-bold border-2 border-emerald-100 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 dark:border-emerald-900/50 transition-all"
                   asChild
                 >
                   <Link href="/services">View Services</Link>
@@ -100,13 +100,13 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
                 
                 <div className="absolute bottom-8 left-8 right-8">
-                  <div className="glass p-6 rounded-3xl flex items-center gap-5">
-                    <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0">
-                      <Flame className="w-8 h-8 text-primary" />
+                  <div className="glass p-6 rounded-3xl flex items-center gap-5 dark:glass-dark">
+                    <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center shrink-0">
+                      <Flame className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
                     </div>
                     <div>
-                      <p className="font-black text-slate-900 text-lg">SANS 10087</p>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Compliance Guaranteed</p>
+                      <p className="font-black text-slate-900 dark:text-white text-lg">SANS 10087</p>
+                      <p className="text-xs font-bold text-slate-500 dark:text-emerald-400/70 uppercase tracking-widest">Compliance Guaranteed</p>
                     </div>
                   </div>
                 </div>
@@ -147,12 +147,12 @@ export default function Home() {
               >
                 <Card className="hover-elevate group border-none bg-white rounded-[2rem] p-8 shadow-sm">
                   <CardContent className="p-0">
-                    <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
-                      <s.icon className="w-8 h-8 text-slate-900 group-hover:text-white transition-colors duration-500" />
+                    <div className="w-16 h-16 bg-emerald-50 dark:bg-emerald-900/20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 transition-colors duration-500">
+                      <s.icon className="w-8 h-8 text-emerald-700 dark:text-emerald-400 group-hover:text-white transition-colors duration-500" />
                     </div>
-                    <h3 className="text-2xl font-black mb-4">{s.title}</h3>
-                    <p className="text-slate-500 leading-relaxed mb-8">{s.desc}</p>
-                    <Link href="/services" className="inline-flex items-center text-sm font-black uppercase tracking-widest text-primary hover:gap-2 transition-all">
+                    <h3 className="text-2xl font-black mb-4 dark:text-white">{s.title}</h3>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-8">{s.desc}</p>
+                    <Link href="/services" className="inline-flex items-center text-sm font-black uppercase tracking-widest text-emerald-600 dark:text-emerald-400 hover:gap-2 transition-all">
                       Learn More <ArrowRight className="w-4 h-4" />
                     </Link>
                   </CardContent>
@@ -164,21 +164,21 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-white dark:bg-emerald-950/10">
         <div className="container mx-auto px-4">
-          <div className="bg-slate-900 rounded-[3rem] p-12 lg:p-24 relative overflow-hidden text-center text-white">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px]" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px]" />
+          <div className="bg-emerald-900 dark:bg-emerald-950 rounded-[3rem] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl shadow-emerald-900/20">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-[100px]" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-600/10 rounded-full blur-[100px]" />
             
             <div className="relative z-10 max-w-4xl mx-auto">
-              <h2 className="text-4xl lg:text-7xl font-display font-black mb-8">Ready to Start Your Project?</h2>
-              <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+              <h2 className="text-4xl lg:text-7xl font-display font-black mb-8 leading-tight">Ready to Start Your Project?</h2>
+              <p className="text-xl text-emerald-100/70 mb-12 max-w-2xl mx-auto leading-relaxed">
                 Contact our expert team today for a free assessment and comprehensive quote. 
                 Experience the gold standard in technical services.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="rounded-2xl h-16 px-12 font-bold bg-primary hover:bg-orange-600" asChild>
+                <Button size="lg" className="rounded-2xl h-16 px-12 font-bold bg-white text-emerald-900 hover:bg-emerald-50 shadow-xl" asChild>
                   <Link href="/contact">Book Consultation</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0728709882"}>

@@ -47,107 +47,101 @@ export default function Contact() {
   });
 
   return (
-    <div className="py-20">
+    <div className="pt-40 pb-32 dark:bg-emerald-950/5">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
-            <h1 className="text-4xl font-display font-extrabold mb-6">Contact Us</h1>
-            <p className="text-lg text-muted-foreground mb-12">
-              Have a question or need a quote? Fill out the form and our team will get back to you as soon as possible.
+            <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white mb-8 leading-[0.9]">
+              Let's <br />
+              <span className="text-gradient italic font-bold">Connect.</span>
+            </h1>
+            <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-16 max-w-lg">
+              Have a question or need a quote? Fill out the form and our team will get back to you within 24 hours.
             </p>
 
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                  <Phone className="h-6 w-6" />
+            <div className="space-y-10">
+              <div className="flex items-start gap-6">
+                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                  <Phone className="h-7 w-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Phone</h3>
-                  <p className="text-muted-foreground">+27 (0) 21 123 4567</p>
+                  <h3 className="font-black text-xl mb-1 dark:text-white">Phone</h3>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">+27 (0) 72 870 9882</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                  <Mail className="h-6 w-6" />
+              <div className="flex items-start gap-6">
+                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                  <Mail className="h-7 w-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Email</h3>
-                  <p className="text-muted-foreground">info@profixservices.co.za</p>
+                  <h3 className="font-black text-xl mb-1 dark:text-white">Email</h3>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">info@gordonsbaygas.co.za</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                  <MapPin className="h-6 w-6" />
+              <div className="flex items-start gap-6">
+                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                  <MapPin className="h-7 w-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Location</h3>
-                  <p className="text-muted-foreground">123 Industrial Way, Cape Town, South Africa</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                  <Clock className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">Working Hours</h3>
-                  <p className="text-muted-foreground">Mon - Fri: 8:00 AM - 5:00 PM</p>
-                  <p className="text-sm text-primary font-medium mt-1">24/7 Emergency Support Available</p>
+                  <h3 className="font-black text-xl mb-1 dark:text-white">Location</h3>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Gordon's Bay, Cape Town, ZA</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <Card className="border-none shadow-2xl">
-            <CardHeader>
-              <CardTitle className="text-2xl">Send a Message</CardTitle>
+          <Card className="border-none shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] dark:bg-emerald-900/10 rounded-[3rem] overflow-hidden">
+            <CardHeader className="p-12 pb-6">
+              <CardTitle className="text-3xl font-black dark:text-white">Send a Message</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-12 pt-0">
               <Form {...form}>
-                <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Full Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Doe" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-8">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Full Name</FormLabel>
+                          <FormControl>
+                            <Input placeholder="John Doe" className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email Address</FormLabel>
-                        <FormControl>
-                          <Input placeholder="john@example.com" type="email" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Email Address</FormLabel>
+                          <FormControl>
+                            <Input placeholder="john@example.com" type="email" className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
                   <FormField
                     control={form.control}
                     name="service"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Required Service</FormLabel>
+                        <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Required Service</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger>
+                            <SelectTrigger className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500">
                               <SelectValue placeholder="Select a service" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent>
+                          <SelectContent className="rounded-2xl border-emerald-100 dark:border-emerald-900">
                             <SelectItem value="electrical">Electrical Services</SelectItem>
                             <SelectItem value="gas">Gas Services</SelectItem>
                             <SelectItem value="plumbing">Plumbing Services</SelectItem>
@@ -164,11 +158,11 @@ export default function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>How can we help?</FormLabel>
+                        <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">How can we help?</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Tell us about your project or required repair..." 
-                            className="min-h-[120px] resize-none"
+                            placeholder="Tell us about your project..." 
+                            className="min-h-[160px] rounded-[2rem] border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500 resize-none p-6"
                             {...field} 
                           />
                         </FormControl>
@@ -177,7 +171,7 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button type="submit" className="w-full h-12 text-lg font-bold" disabled={mutation.isPending}>
+                  <Button type="submit" className="w-full h-16 rounded-[2rem] text-lg font-black bg-emerald-600 hover:bg-emerald-700 shadow-xl shadow-emerald-500/20 text-white" disabled={mutation.isPending}>
                     {mutation.isPending ? "Sending..." : "Submit Inquiry"}
                   </Button>
                 </form>
