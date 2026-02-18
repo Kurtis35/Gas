@@ -137,7 +137,7 @@ export default function Home() {
               { icon: Zap, title: "Electrical", desc: "COC certification, industrial repairs, and complex fault finding.", delay: 0 },
               { icon: Flame, title: "Gas Services", desc: "New installations, leak detection, and appliance certification.", delay: 0.1 },
               { icon: Droplets, title: "Plumbing", desc: "Maintenance, geyser installations, and emergency repairs.", delay: 0.2 },
-              { icon: Bug, title: "Beetle & Pest Control", desc: "Certified beetle COCs and residential structural pest management. 25-mile radius.", delay: 0.3 }
+              { icon: Bug, title: "Beetle & Pest Control", desc: "Specializing in Beetle Services, certified COCs, and structural pest management. Serving a 25-mile radius.", delay: 0.3 }
             ].map((s, i) => (
               <motion.div
                 key={i}

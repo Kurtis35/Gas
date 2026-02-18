@@ -18,7 +18,7 @@ const services = [
   {
     title: "Electrical Services",
     icon: Zap,
-    color: "from-yellow-400 to-orange-500",
+    color: "from-sky-400 to-blue-600",
     description: "Certified work for residential and industrial sectors, specializing in safety compliance.",
     items: [
       "Electrical Compliance Certificates (COC)",
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Gas Services",
     icon: Flame,
-    color: "from-orange-500 to-red-600",
+    color: "from-blue-500 to-sky-700",
     description: "Professional gas solutions for homes, businesses, and luxury marine vessels.",
     items: [
       "New Gas Installations",
@@ -46,7 +46,7 @@ const services = [
   {
     title: "Plumbing Services",
     icon: Droplets,
-    color: "from-blue-400 to-indigo-600",
+    color: "from-sky-300 to-blue-500",
     description: "Full-scale plumbing solutions coming soon. Quality maintenance and repairs.",
     status: "COMING SOON",
     items: [
@@ -57,22 +57,23 @@ const services = [
     ]
   },
   {
-    title: "Pest Control",
+    title: "Beetle & Pest Control",
     icon: Bug,
-    color: "from-emerald-400 to-teal-600",
-    description: "Certified structural pest management for property transfers and safety.",
+    color: "from-blue-400 to-sky-600",
+    description: "Specializing in Beetle Services and certified structural pest management for property transfers. Serving a 25-mile radius of Gordon's Bay.",
     items: [
       "Residential Beetle Certificates",
       "Structural Pest Control",
       "Wood-borer Treatment",
-      "Termite Inspections"
+      "Termite Inspections",
+      "Beetle Compliance Work"
     ]
   }
 ];
 
 export default function Services() {
   return (
-    <div className="pt-32 pb-32 bg-white dark:bg-emerald-950/5">
+    <div className="pt-32 pb-32 bg-white dark:bg-sky-950/5">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto mb-24 text-center">
           <motion.div
@@ -100,14 +101,14 @@ export default function Services() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="rounded-[3rem] border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:bg-emerald-900/10 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 overflow-hidden group">
+              <Card className="rounded-[3rem] border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:bg-sky-900/10 hover:shadow-2xl hover:shadow-sky-500/5 transition-all duration-500 overflow-hidden group">
                 <CardContent className="p-12">
                   <div className="flex items-start justify-between mb-10">
                     <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${s.color} flex items-center justify-center text-white shadow-lg`}>
                       <s.icon className="w-10 h-10" />
                     </div>
                     {s.status && (
-                      <span className="px-4 py-2 rounded-full bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-black tracking-[0.2em] uppercase">
+                      <span className="px-4 py-2 rounded-full bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 text-[10px] font-black tracking-[0.2em] uppercase">
                         {s.status}
                       </span>
                     )}
@@ -119,15 +120,15 @@ export default function Services() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                     {s.items.map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3">
-                        <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center shrink-0">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                        <div className="w-6 h-6 rounded-full bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center shrink-0">
+                          <CheckCircle2 className="w-4 h-4 text-sky-600" />
                         </div>
                         <span className="text-sm font-bold text-slate-700 dark:text-slate-300">{item}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <Button variant="ghost" className="p-0 h-auto font-black uppercase tracking-widest text-xs hover:bg-transparent text-emerald-600 dark:text-emerald-400 hover:gap-3 transition-all" asChild>
+                  <Button variant="ghost" className="p-0 h-auto font-black uppercase tracking-widest text-xs hover:bg-transparent text-sky-600 dark:text-sky-400 hover:gap-3 transition-all" asChild>
                     <Link href="/contact">
                       Request Service <ArrowRight className="w-4 h-4" />
                     </Link>
@@ -139,24 +140,24 @@ export default function Services() {
         </div>
 
         {/* Technical Capabilities */}
-        <div className="bg-emerald-950 dark:bg-black rounded-[4rem] p-12 lg:p-20 text-white overflow-hidden relative shadow-2xl">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-[80px]" />
+        <div className="bg-sky-950 dark:bg-black rounded-[4rem] p-12 lg:p-20 text-white overflow-hidden relative shadow-2xl">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-sky-500/10 rounded-full blur-[80px]" />
           
           <div className="relative z-10 grid lg:grid-cols-3 gap-16">
             <div>
-              <ShieldCheck className="w-12 h-12 text-emerald-500 mb-8" />
+              <ShieldCheck className="w-12 h-12 text-sky-500 mb-8" />
               <h3 className="text-2xl font-black mb-4">Compliance Work</h3>
-              <p className="text-emerald-100/60 leading-relaxed">Full legal certification for gas, electrical, and beetle services ensuring insurance validity.</p>
+              <p className="text-sky-100/60 leading-relaxed">Full legal certification for gas, electrical, and beetle services ensuring insurance validity.</p>
             </div>
             <div>
-              <Wrench className="w-12 h-12 text-emerald-500 mb-8" />
+              <Wrench className="w-12 h-12 text-sky-500 mb-8" />
               <h3 className="text-2xl font-black mb-4">Maintenance</h3>
-              <p className="text-emerald-100/60 leading-relaxed">Ongoing preventative care for complex systems to ensure maximum efficiency and safety.</p>
+              <p className="text-sky-100/60 leading-relaxed">Ongoing preventative care for complex systems to ensure maximum efficiency and safety.</p>
             </div>
             <div>
-              <Construction className="w-12 h-12 text-emerald-500 mb-8" />
+              <Construction className="w-12 h-12 text-sky-500 mb-8" />
               <h3 className="text-2xl font-black mb-4">Renovations</h3>
-              <p className="text-emerald-100/60 leading-relaxed">Technical oversight and implementation for high-end residential building projects.</p>
+              <p className="text-sky-100/60 leading-relaxed">Technical oversight and implementation for high-end residential building projects.</p>
             </div>
           </div>
         </div>
