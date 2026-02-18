@@ -8,17 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-display text-xl font-bold text-white">
-              <Hammer className="h-6 w-6 text-primary" />
-              <span>Gordon's Bay Gas(PTY) LTD</span>
+              <img src="/logo.png" alt="Fantastic 4 Logo" className="h-8 w-8 object-contain" />
+              <span>Fantastic 4</span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Professional gas installations, compliance certificates, and technical services for residential and commercial clients.
+              Expert installations, repairs, and maintenance services for residential and industrial clients.
             </p>
             <div className="flex gap-4">
               <Facebook className="h-5 w-5 hover:text-primary cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 hover:text-primary cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 hover:text-primary cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 hover:text-primary cursor-pointer transition-colors" />
             </div>
           </div>
 
@@ -38,7 +36,6 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
               <li><Link href="/contact" className="hover:text-primary">Get a Quote</Link></li>
-              <li><Link href="/" className="hover:text-primary">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -62,7 +59,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
-          <p>© {new Date().getFullYear()} Gordon's Bay Gas(PTY) LTD. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Fantastic 4. All rights reserved.</p>
         </div>
       </div>
     </footer>

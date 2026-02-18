@@ -47,7 +47,7 @@ export default function Contact() {
   });
 
   return (
-    <div className="pt-40 pb-32 dark:bg-emerald-950/5">
+    <div className="pt-40 pb-32 dark:bg-sky-950/5">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
@@ -61,7 +61,7 @@ export default function Contact() {
 
             <div className="space-y-10">
               <div className="flex items-start gap-6">
-                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 shrink-0 shadow-sm">
                   <Phone className="h-7 w-7" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-6">
-                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 shrink-0 shadow-sm">
                   <Mail className="h-7 w-7" />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-6">
-                <div className="h-14 w-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0 shadow-sm">
+                <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 shrink-0 shadow-sm">
                   <MapPin className="h-7 w-7" />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <Card className="border-none shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] dark:bg-emerald-900/10 rounded-[3rem] overflow-hidden">
+          <Card className="border-none shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] dark:bg-sky-900/10 rounded-[3rem] overflow-hidden">
             <CardHeader className="p-12 pb-6">
               <CardTitle className="text-3xl font-black dark:text-white">Send a Message</CardTitle>
             </CardHeader>
@@ -107,7 +107,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Full Name</FormLabel>
                           <FormControl>
-                            <Input placeholder="John Doe" className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500" {...field} />
+                            <Input placeholder="John Doe" className="h-14 rounded-2xl border-sky-50 dark:border-sky-900/50 bg-sky-50/30 dark:bg-sky-950/30 focus-visible:ring-sky-500" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -121,7 +121,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Email Address</FormLabel>
                           <FormControl>
-                            <Input placeholder="john@example.com" type="email" className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500" {...field} />
+                            <Input placeholder="john@example.com" type="email" className="h-14 rounded-2xl border-sky-50 dark:border-sky-900/50 bg-sky-50/30 dark:bg-sky-950/30 focus-visible:ring-sky-500" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -137,11 +137,11 @@ export default function Contact() {
                         <FormLabel className="font-black uppercase tracking-widest text-[10px] text-slate-400">Required Service</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="h-14 rounded-2xl border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500">
+                            <SelectTrigger className="h-14 rounded-2xl border-sky-50 dark:border-sky-900/50 bg-sky-50/30 dark:bg-sky-950/30 focus-visible:ring-sky-500">
                               <SelectValue placeholder="Select a service" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent className="rounded-2xl border-emerald-100 dark:border-emerald-900">
+                          <SelectContent className="rounded-2xl border-sky-100 dark:border-sky-900">
                             <SelectItem value="electrical">Electrical Services</SelectItem>
                             <SelectItem value="gas">Gas Services</SelectItem>
                             <SelectItem value="plumbing">Plumbing Services</SelectItem>
@@ -162,7 +162,7 @@ export default function Contact() {
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us about your project..." 
-                            className="min-h-[160px] rounded-[2rem] border-emerald-50 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-950/30 focus-visible:ring-emerald-500 resize-none p-6"
+                            className="min-h-[160px] rounded-[2rem] border-sky-50 dark:border-sky-900/50 bg-sky-50/30 dark:bg-sky-950/30 focus-visible:ring-sky-500 resize-none p-6"
                             {...field} 
                           />
                         </FormControl>
@@ -171,7 +171,7 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button type="submit" className="w-full h-16 rounded-[2rem] text-lg font-black bg-emerald-600 hover:bg-emerald-700 shadow-xl shadow-emerald-500/20 text-white" disabled={mutation.isPending}>
+                  <Button type="submit" className="w-full h-16 rounded-[2rem] text-lg font-black bg-sky-600 hover:bg-sky-700 shadow-xl shadow-sky-500/20 text-white" disabled={mutation.isPending}>
                     {mutation.isPending ? "Sending..." : "Submit Inquiry"}
                   </Button>
                 </form>
