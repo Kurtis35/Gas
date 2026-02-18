@@ -47,6 +47,7 @@ export default function Home() {
               <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-xl">
                 Premium gas, electrical, and plumbing services for Cape Town. 
                 Professional certification and safety you can stake your reputation on.
+                Serving a 25-mile radius of Gordon's Bay.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-5">
@@ -136,7 +137,7 @@ export default function Home() {
               { icon: Zap, title: "Electrical", desc: "COC certification, industrial repairs, and complex fault finding.", delay: 0 },
               { icon: Flame, title: "Gas Services", desc: "New installations, leak detection, and appliance certification.", delay: 0.1 },
               { icon: Droplets, title: "Plumbing", desc: "Maintenance, geyser installations, and emergency repairs.", delay: 0.2 },
-              { icon: Bug, title: "Pest Control", desc: "Certified beetle COCs and residential structural pest management.", delay: 0.3 }
+              { icon: Bug, title: "Beetle & Pest Control", desc: "Certified beetle COCs and residential structural pest management. 25-mile radius.", delay: 0.3 }
             ].map((s, i) => (
               <motion.div
                 key={i}
@@ -181,9 +182,9 @@ export default function Home() {
                 <Button size="lg" className="rounded-2xl h-16 px-12 font-bold bg-white text-sky-900 hover:bg-sky-50 shadow-xl" asChild>
                   <Link href="/contact">Book Consultation</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0728709882"}>
+                <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0768320777"}>
                   <Phone className="w-5 h-5 mr-3" />
-                  072 870 9882
+                  076 832 0777
                 </Button>
               </div>
             </div>

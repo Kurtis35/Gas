@@ -66,7 +66,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Phone</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">072 870 9882</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">076 832 0777</p>
                 </div>
               </div>
 
@@ -76,7 +76,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Email</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">info@gordonsbaygas.co.za</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Jcrake@webcoelec.co.za</p>
                 </div>
               </div>
 
