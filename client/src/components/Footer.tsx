@@ -7,9 +7,12 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 font-display text-xl font-bold text-white">
-              <img src="/logo.png" alt="Fantastic 4 Logo" className="h-8 w-8 object-contain" />
-              <span>Fantastic 4</span>
+            <Link href="/" className="flex items-center gap-4 group font-display text-2xl font-black text-white leading-none tracking-tighter">
+              <img src="/logo.png" alt="Fantastic 4 Logo" className="h-16 w-16 object-contain transition-transform group-hover:scale-105" />
+              <div className="flex flex-col">
+                <span>Fantastic 4</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-sky-500 mt-1">Professional Installations</span>
+              </div>
             </Link>
             <p className="text-sm leading-relaxed">
               Expert installations, repairs, and maintenance services for residential and industrial clients.

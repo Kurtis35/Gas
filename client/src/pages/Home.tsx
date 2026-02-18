@@ -39,7 +39,7 @@ export default function Home() {
                 <span className="uppercase tracking-wider text-[10px]">Certified Compliance Specialists</span>
               </div>
               
-              <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-8">
+              <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-8">
                 Expert <br />
                 <span className="text-gradient italic text-sky-600">Installations.</span>
               </h1>
@@ -103,10 +103,10 @@ export default function Home() {
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="glass p-6 rounded-3xl flex items-center gap-5 dark:glass-dark">
                     <div className="w-14 h-14 bg-sky-100 dark:bg-sky-900/30 rounded-2xl flex items-center justify-center shrink-0">
-                      <Flame className="w-8 h-8 text-sky-600 dark:text-sky-400" />
+                      <ShieldCheck className="w-8 h-8 text-sky-600 dark:text-sky-400" />
                     </div>
                     <div>
-                      <p className="font-black text-slate-900 dark:text-white text-lg">SANS 10087</p>
+                      <p className="font-black text-slate-900 dark:text-white text-lg">Fully Certified</p>
                       <p className="text-xs font-bold text-slate-500 dark:text-sky-400/70 uppercase tracking-widest">Compliance Guaranteed</p>
                     </div>
                   </div>

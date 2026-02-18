@@ -30,10 +30,10 @@ export function Navbar() {
         : "bg-transparent py-8"
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
-          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-12 h-12 object-contain" />
+        <Link href="/" className="flex items-center gap-4 group">
+          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-16 h-16 object-contain transition-transform group-hover:scale-105" />
           <div className="flex flex-col">
-            <span className="font-display text-xl font-black text-slate-900 dark:text-white leading-none">Fantastic 4</span>
+            <span className="font-display text-2xl font-black text-slate-900 dark:text-white leading-none tracking-tighter">Fantastic 4</span>
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-sky-600 dark:text-sky-400 mt-1">Certified Installers</span>
           </div>
         </Link>

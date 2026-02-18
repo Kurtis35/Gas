@@ -75,13 +75,13 @@ export default function Services() {
   return (
     <div className="pt-32 pb-32 bg-white dark:bg-sky-950/5">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto mb-24 text-center">
+        <div className="max-w-4xl mx-auto mb-16 md:mb-24 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white mb-8 leading-[0.9]">
+            <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white mb-6 md:mb-8 leading-[0.9]">
               Premium <br />
               <span className="text-gradient italic">Expertise.</span>
             </h1>
