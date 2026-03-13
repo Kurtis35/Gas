@@ -51,11 +51,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>076 832 0777</span>
+                <span>072 870 9882</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>Jcrake@webcoelec.co.za</span>
+                <span>info@gordonsbaygas.co.za</span>
               </li>
             </ul>
           </div>

@@ -34,10 +34,6 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-50 border border-sky-100 text-sky-700 text-sm font-bold mb-8 shadow-sm">
-                <ShieldCheck className="w-4 h-4" />
-                <span className="uppercase tracking-wider text-[10px]">Certified Compliance Specialists</span>
-              </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-8">
                 Expert <br />
@@ -45,7 +41,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-xl">
-                Premium gas, electrical, and plumbing services for Cape Town. 
+                Premium gas, electrical, plumbing and beatle services for Cape Town. 
                 Professional certification and safety you can stake your reputation on.
                 Serving a 25-mile radius of Gordon's Bay.
               </p>
@@ -174,7 +170,7 @@ export default function Home() {
             <div className="relative z-10 max-w-4xl mx-auto">
               <h2 className="text-4xl lg:text-7xl font-display font-black mb-8 leading-tight">Ready to Start Your Project?</h2>
               <p className="text-xl text-sky-100/70 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Contact our expert team today for a free assessment and comprehensive quote. 
+                Contact our expert team today for an assessment and comprehensive quote. 
                 Experience the gold standard in technical services.
               </p>
               
@@ -182,9 +178,9 @@ export default function Home() {
                 <Button size="lg" className="rounded-2xl h-16 px-12 font-bold bg-white text-sky-900 hover:bg-sky-50 shadow-xl" asChild>
                   <Link href="/contact">Book Consultation</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0768320777"}>
+                <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0728709882"}>
                   <Phone className="w-5 h-5 mr-3" />
-                  076 832 0777
+                  072 870 9882
                 </Button>
               </div>
             </div>
