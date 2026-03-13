@@ -61,8 +61,9 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
+        <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs space-y-2">
           <p>© {new Date().getFullYear()} Fantastic 4. All rights reserved.</p>
+          <p className="text-slate-500">Made with ❤️ in South Africa by Evermore Digital Solutions</p>
         </div>
       </div>
     </footer>
