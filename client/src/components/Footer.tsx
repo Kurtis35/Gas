@@ -47,15 +47,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>13 Gladiolus Cres, Gordon's Bay, Cape Town, 7140</span>
+                <span>4 Attalia Street, Somerset West</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>072 870 9882</span>
+                <span>076 832 0777</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>info@gordonsbaygas.co.za</span>
+                <span>Jcrake@webcoelec.co.za</span>
               </li>
             </ul>
           </div>
