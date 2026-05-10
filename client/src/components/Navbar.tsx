@@ -26,12 +26,12 @@ export function Navbar() {
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
       scrolled 
-        ? "bg-white/90 backdrop-blur-2xl py-4 border-sky-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:bg-sky-950/90 dark:border-sky-900/50" 
-        : "bg-transparent py-8"
+        ? "bg-white/90 backdrop-blur-2xl py-2 border-sky-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:bg-sky-950/90 dark:border-sky-900/50" 
+        : "bg-transparent py-3"
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center group">
-          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-32 h-32 object-contain transition-transform group-hover:scale-105 drop-shadow-sm" />
+          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-24 h-24 object-contain transition-transform group-hover:scale-105 drop-shadow-sm" />
         </Link>
 
         {/* Desktop Nav */}
