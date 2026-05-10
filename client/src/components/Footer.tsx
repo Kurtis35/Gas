@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center group">
-              <img src="/logo.png" alt="Fantastic 4 Logo" className="h-24 w-24 object-contain transition-transform group-hover:scale-105 brightness-0 invert" />
+              <img src="/logo.png" alt="Fantastic 4 Logo" className="h-32 w-32 object-contain transition-transform group-hover:scale-105 brightness-0 invert" />
             </Link>
             <p className="text-sm leading-relaxed">
               Expert installations, repairs, and maintenance services for residential and industrial clients.

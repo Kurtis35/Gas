@@ -31,7 +31,7 @@ export function Navbar() {
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center group">
-          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-24 h-24 object-contain transition-transform group-hover:scale-105 drop-shadow-sm" />
+          <img src="/logo.png" alt="Fantastic 4 Logo" className="w-32 h-32 object-contain transition-transform group-hover:scale-105 drop-shadow-sm" />
         </Link>
 
         {/* Desktop Nav */}
