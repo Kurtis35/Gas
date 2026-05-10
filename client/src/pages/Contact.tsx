@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Email</h3>
-                  <a href="mailto:info@fantstic4.co.za" className="text-slate-500 dark:text-slate-400 text-lg font-medium hover:text-sky-600 transition-colors">info@fantstic4.co.za</a>
+                  <a href="mailto:info@fantastic4.co.za" className="text-slate-500 dark:text-slate-400 text-lg font-medium hover:text-sky-600 transition-colors">info@fantastic4.co.za</a>
                 </div>
               </div>
 
