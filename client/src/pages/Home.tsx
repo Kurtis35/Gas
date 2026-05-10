@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center pt-24 md:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-orange-100/40 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[700px] h-[700px] bg-blue-50/40 rounded-full blur-[120px]" />
@@ -35,18 +35,18 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               
-              <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-6 md:mb-8">
                 Expert <br />
                 <span className="text-gradient italic text-sky-600">Installations.</span>
               </h1>
               
-              <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-xl">
+              <p className="text-base md:text-xl text-slate-600 dark:text-slate-300 mb-8 md:mb-10 leading-relaxed max-w-xl">
                 Premium gas, electrical, plumbing and beatle services for Cape Town. 
                 Professional certification and safety you can stake your reputation on.
                 Serving a 25-mile radius of Gordon's Bay.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-5">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
                 <Button 
                   size="lg" 
                   className="rounded-2xl h-16 px-10 text-lg font-bold shadow-2xl shadow-sky-500/20 hover:shadow-sky-500/40 transition-all bg-sky-600 hover:bg-sky-700"
@@ -180,7 +180,7 @@ export default function Home() {
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-2xl h-16 px-12 font-bold border-white/20 text-white hover:bg-white/10" onClick={() => window.location.href="tel:0768320777"}>
                   <Phone className="w-5 h-5 mr-3" />
-                  076 832 0777
+                  076 832 0777 / 072 870 9882
                 </Button>
               </div>
             </div>

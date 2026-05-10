@@ -86,10 +86,16 @@ export function Navbar() {
             <Button asChild className="w-full h-14 rounded-2xl font-bold bg-sky-600 hover:bg-sky-700">
               <Link href="/contact">Request Service</Link>
             </Button>
-            <a href="tel:0768320777" className="flex items-center justify-center gap-3 text-slate-900 dark:text-white font-black">
-              <Phone className="w-5 h-5 text-sky-600 dark:text-sky-400" />
-              076 832 0777
-            </a>
+            <div className="flex flex-col gap-2">
+              <a href="tel:0768320777" className="flex items-center justify-center gap-3 text-slate-900 dark:text-white font-black">
+                <Phone className="w-5 h-5 text-sky-600 dark:text-sky-400" />
+                076 832 0777
+              </a>
+              <a href="tel:0728709882" className="flex items-center justify-center gap-3 text-slate-900 dark:text-white font-black">
+                <Phone className="w-5 h-5 text-sky-600 dark:text-sky-400" />
+                072 870 9882
+              </a>
+            </div>
           </div>
         </div>
       )}

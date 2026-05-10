@@ -47,26 +47,29 @@ export default function Contact() {
   });
 
   return (
-    <div className="pt-40 pb-32 dark:bg-sky-950/5">
+    <div className="pt-28 md:pt-40 pb-16 md:pb-32 dark:bg-sky-950/5">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           <div>
-            <h1 className="text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white mb-8 leading-[0.9]">
+            <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-black text-slate-900 dark:text-white mb-6 md:mb-8 leading-[0.9]">
               Let's <br />
               <span className="text-gradient italic font-bold">Connect.</span>
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-16 max-w-lg">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 md:mb-16 max-w-lg">
               Have a question or need a quote? Fill out the form and our team will get back to you within 24 hours.
             </p>
 
-            <div className="space-y-10">
+            <div className="space-y-8 md:space-y-10">
               <div className="flex items-start gap-6">
                 <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center text-sky-600 dark:text-sky-400 shrink-0 shadow-sm">
                   <Phone className="h-7 w-7" />
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Phone</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">076 832 0777</p>
+                  <div className="flex flex-col gap-1">
+                    <a href="tel:0768320777" className="text-slate-500 dark:text-slate-400 text-lg font-medium hover:text-sky-600 transition-colors">076 832 0777</a>
+                    <a href="tel:0728709882" className="text-slate-500 dark:text-slate-400 text-lg font-medium hover:text-sky-600 transition-colors">072 870 9882</a>
+                  </div>
                 </div>
               </div>
 
@@ -76,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-black text-xl mb-1 dark:text-white">Email</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Jcrake@webcoelec.co.za</p>
+                  <a href="mailto:info@fantstic4.co.za" className="text-slate-500 dark:text-slate-400 text-lg font-medium hover:text-sky-600 transition-colors">info@fantstic4.co.za</a>
                 </div>
               </div>
 
@@ -92,14 +95,14 @@ export default function Contact() {
             </div>
           </div>
 
-          <Card className="border-none shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] dark:bg-sky-900/10 rounded-[3rem] overflow-hidden">
-            <CardHeader className="p-12 pb-6">
-              <CardTitle className="text-3xl font-black dark:text-white">Send a Message</CardTitle>
+          <Card className="border-none shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] dark:bg-sky-900/10 rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+            <CardHeader className="p-6 md:p-12 pb-4 md:pb-6">
+              <CardTitle className="text-2xl md:text-3xl font-black dark:text-white">Send a Message</CardTitle>
             </CardHeader>
-            <CardContent className="p-12 pt-0">
+            <CardContent className="p-6 md:p-12 pt-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-2 gap-5 md:gap-8">
                     <FormField
                       control={form.control}
                       name="name"
